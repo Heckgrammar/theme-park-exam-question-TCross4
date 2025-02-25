@@ -20,6 +20,19 @@
             // 3: 6 people
             // Commit your changes and add screnshot evidence of your program running to the Readme
 
+            nt charge = 0;
+        Console.WriteLine ("Type the number of people in the group.");
+        int ppl = Convert.ToInt16(Console.ReadLine());
+        if (ppl >= 6)
+        {
+            charge = ppl * 6 - 5;
+        }
+        else
+        {
+            charge = ppl * 5;
+        }
+        Console.WriteLine($"{charge} Pounds.");
+
         }
     }
 }
